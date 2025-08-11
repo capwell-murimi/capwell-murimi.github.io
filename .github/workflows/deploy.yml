@@ -1,15 +1,18 @@
-name: Deploy to GitHub Pages
+name: Deploy User Site to GitHub Pages
 
 on:
   push:
-    branches: ["master"]
+    branches: ["source"]
   workflow_dispatch:
+
+permissions:
+  contents: write  # <--- THIS is key for pushing
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout source branch
         uses: actions/checkout@v4
 
       - name: Use Node.js 20
@@ -24,10 +27,12 @@ jobs:
       - name: Build Vite project
         run: npm run build
 
-      - name: Deploy to GitHub Pages (User Site)
+      - name: Deploy to master branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          publish_branch: gh-pages
+          publish_branch: master
+
+
 
