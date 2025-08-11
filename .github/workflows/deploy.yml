@@ -1,8 +1,8 @@
-name: Deploy to GitHub Pages (User Site)
+name: Deploy User Site to GitHub Pages
 
 on:
   push:
-    branches: ["source"]
+    branches: ["source"] # Only build when pushing to source branch
   workflow_dispatch:
 
 jobs:
@@ -30,5 +30,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: master
+
 
 
