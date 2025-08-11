@@ -2,8 +2,11 @@ name: Deploy User Site to GitHub Pages
 
 on:
   push:
-    branches: ["source"] # Only build when pushing to source branch
+    branches: ["source"]
   workflow_dispatch:
+
+permissions:
+  contents: write  # <--- THIS is key for pushing
 
 jobs:
   build-and-deploy:
