@@ -8,7 +8,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: 'https://github.com/capwell-murimi/capwell-murimi.github.io',
+  base: 'https://github.com/capwell-murimi/capwell-murimi.github.io.git',
   server: {
     host: "::",
     port: 8080,
