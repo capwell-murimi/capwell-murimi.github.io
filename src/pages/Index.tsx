@@ -38,12 +38,12 @@ const Index = () => {
               "Turning data into actionable insights, one model at a time."
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <a href="/resume" className="inline-block" target="_self" rel="noopener">
+              <Link to="/resume">
                 <Button size="lg">View Resume</Button>
-              </a>
-              <a href="/contact" className="inline-block" target="_self" rel="noopener">
+              </Link>
+              <Link to="/contact">
                 <Button size="lg" variant="outline">Contact Me</Button>
-              </a>
+              </Link>
             </div>
 
             <div className="mt-10 grid grid-cols-3 gap-4">
