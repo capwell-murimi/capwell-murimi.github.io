@@ -14,6 +14,30 @@ const projects = [
       { href: "https://breastcancerprediction-capwellsapp.streamlit.app/", label: "Try the App" }
     ]
   },
+    {
+    img: "https://plus.unsplash.com/premium_photo-1664304160128-ca5a08ac46ce?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Database Migration Project Cover",
+    title: "One-Time MySQL to PostgreSQL Migration",
+    problem: "Migrating legacy MySQL databases to PostgreSQL can be error-prone and complex, especially on Windows systems.",
+    approach: "Used pgloader in Docker to automate schema and data migration, handling type conversions and ensuring minimal downtime.",
+    tools: "pgloader, Docker, MySQL, PostgreSQL, Windows",
+    result: "Achieved seamless migration with a reproducible workflow and documented steps for future migrations.",
+    links: [
+      { href: "https://capwell.hashnode.dev/one-time-mysql-to-postgresql-migration-with-pgloader-docker-windows-friendly", label: "Read Guide" }
+    ]
+  },
+  {
+    img: "https://images.unsplash.com/photo-1617240016072-d92174e44171?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Slack ETL Pipeline Cover",
+    title: "Slack ETL Pipeline",
+    problem: "Extracting, transforming, and loading Slack data for analytics is challenging due to API limitations and data structure complexity.",
+    approach: "Developed an ETL pipeline to fetch Slack data, transform it, and load into PostgreSQL for downstream analysis.",
+    tools: "Python, Slack API, PostgreSQL, Docker",
+    result: "Enabled automated, reliable Slack data ingestion for reporting and analytics.",
+    links: [
+      { href: "https://github.com/capwell-murimi/powerDMARCxSLACKxpostgreSQL-ETL", label: "View Code" }
+    ]
+  },
   {
     img: "https://images.unsplash.com/photo-1585288766827-c62e98d70191?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0",
     alt: "LinkedIn Post Generator Cover",
